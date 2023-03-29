@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="958.0" style="-fx-background-color: #dadada;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="daw_programacion.tarea5ud8proyectoconpool.Controladores.AppControllerMenuModificar">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="581.0" minWidth="10.0" prefWidth="482.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="379.0" minWidth="10.0" prefWidth="379.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox alignment="CENTER" prefHeight="562.0" prefWidth="616.0" spacing="20.0">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <Label fx:id="TextoCabezera" text="Menú Modificar Empleado">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <VBox fx:id="CuadroModificar" alignment="CENTER" prefHeight="340.0" prefWidth="557.0" styleClass="panel-primary">
+               <children>
+                  <HBox prefHeight="33.0" prefWidth="668.0">
+                     <children>
+                        <Label fx:id="id_empleado_modificar" text="Id_empleado">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="idEmpleadoModificar" prefHeight="25.0" prefWidth="328.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="34.0" prefWidth="668.0">
+                     <children>
+                        <Label text="Nombre">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="nombreEmpleadoModificar" prefHeight="25.0" prefWidth="355.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="38.0" prefWidth="668.0">
+                     <children>
+                        <Label text="Apellidos">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="apellidosEmpleadoModificar" prefHeight="25.0" prefWidth="350.0">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="37.0" prefWidth="668.0">
+                     <children>
+                        <Label text="Fecha de nacimiento">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="fechaNacimientoModificar" prefHeight="25.0" prefWidth="287.0" promptText="AAAA-MM-DD" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="37.0" prefWidth="668.0">
+                     <children>
+                        <Label text="Puesto">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="puestoEmpleadoModificar" prefHeight="25.0" prefWidth="365.0">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="33.0" prefWidth="668.0">
+                     <children>
+                        <Label text="Email">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="emailEmpleadoModificar" prefHeight="25.0" prefWidth="373.0" />
+                     </children>
+                  </HBox>
+                  <Button fx:id="onClickButtonMODIFICIDAR" mnemonicParsing="false" onAction="#onClickButtonMODIFICIDAR" style="-fx-background-color: orange;" text="Modificar empleado" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" onAction="#onButtonMenuPrincipal" prefHeight="37.0" prefWidth="130.0" style="-fx-background-color: #9bae78; -fx-font-weight: bold;" text="Menu Principal" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox prefHeight="550.0" prefWidth="335.0" GridPane.columnIndex="1">
+         <children>
+            <TextFlow fx:id="Cuadroinformacion" prefHeight="260.0" prefWidth="379.0" style="-fx-background-color: yellow;" visible="false">
+               <styleClass>
+                  <String fx:value="alert" />
+                  <String fx:value="alert-success" />
+               </styleClass>
+               <children>
+                  <Button fx:id="cerrar" mnemonicParsing="false" onAction="#ocultar" text="x" />
+                  <Text fx:id="mensaje" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="mensaje" text="Mensaje" />
+               </children>
+            </TextFlow>
+            <HBox prefHeight="43.0" prefWidth="379.0">
+               <children>
+                  <Label alignment="TOP_LEFT" text="Id de empleado">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="idEmpleadoBuscar" alignment="TOP_LEFT" prefHeight="25.0" prefWidth="174.0" />
+                  <Button fx:id="onClickButtonBUSCARPORID" mnemonicParsing="false" onAction="#onClickButtonBUSCARPORID" style="-fx-background-color: #905c5c;" text="Buscar por ID" textFill="WHITE">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btn-primary" />
+                     </styleClass>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="0.0" prefWidth="379.0" />
+         </children>
+      </VBox>
+   </children>
+</GridPane>

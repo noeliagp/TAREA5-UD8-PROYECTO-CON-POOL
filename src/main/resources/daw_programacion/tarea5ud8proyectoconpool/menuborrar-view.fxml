@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<GridPane prefHeight="826.0" prefWidth="1527.0" style="-fx-background-color: #dadada;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="daw_programacion.tarea5ud8proyectoconpool.Controladores.AppControllerMenuBorrar">
+<columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1268.0" minWidth="10.0" prefWidth="1268.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="445.0" minWidth="10.0" prefWidth="259.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="826.0" prefWidth="1215.0">
+         <children>
+            <Label fx:id="TextoCabecera" prefHeight="35.0" prefWidth="280.0" text="Menú Eliminar Empleados">
+               <VBox.margin>
+                  <Insets bottom="15.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <HBox fx:id="hBoxLista" prefHeight="17.0" prefWidth="1617.0" spacing="45.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="Id Empleado" wrappingWidth="128.98827743530273" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="Nombre" wrappingWidth="111.92194509506226">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Text>
+                  <Text layoutX="106.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="Apellidos" wrappingWidth="137.13680744171143" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="Fecha de nacimiento" wrappingWidth="183.13680744171143">
+                     <HBox.margin>
+                        <Insets left="-20.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text layoutX="454.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="Puesto" wrappingWidth="166.13680744171143" />
+                  <Text layoutX="578.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="Email" wrappingWidth="78.13680744171143" />
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <VBox fx:id="EmpleadosMostrar" alignment="TOP_CENTER" prefHeight="16.0" prefWidth="1006.0" spacing="1.0" styleClass="panel-default" />
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefHeight="793.0" prefWidth="411.0" GridPane.columnIndex="1">
+         <children>
+            <TextFlow fx:id="Cuadroinformacion" prefHeight="260.0" prefWidth="379.0" style="-fx-background-color: yellow;" visible="false">
+               <styleClass>
+                  <String fx:value="alert" />
+                  <String fx:value="alert-success" />
+               </styleClass>
+               <children>
+                  <Button fx:id="cerrar" mnemonicParsing="false" onAction="#ocultar" text="x" />
+                  <Text fx:id="mensaje" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="mensaje" text="Mensaje" />
+               </children>
+            </TextFlow>
+            <VBox alignment="CENTER">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <children>
+                  <Label alignment="TOP_LEFT" text="Id de empleado">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="25.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="idEmpleadoBorrar" alignment="CENTER" prefHeight="25.0" prefWidth="100.0" />
+                  <Button fx:id="onClickButtonBORRARPORID" mnemonicParsing="false" onAction="#onClickButtonBORRARPORID" style="-fx-background-color: red;" text="Borrar por ID" textFill="WHITE">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btn-primary" />
+                     </styleClass>
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <Button alignment="CENTER" contentDisplay="CENTER" onAction="#onButtonMenuPrincipal" prefHeight="35.0" prefWidth="128.0" style="-fx-background-color: #9bae78;" text="Menu Principal" textAlignment="CENTER" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</GridPane>

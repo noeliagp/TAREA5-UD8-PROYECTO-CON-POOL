@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane prefHeight="815.0" prefWidth="943.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="daw_programacion.tarea5ud8proyectoconpool.Controladores.AppControllerMenuMostrar">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <VBox alignment="CENTER" style="-fx-background-color: #dadada;">
+         <children>
+            <Label fx:id="TextoCabecera" prefHeight="35.0" prefWidth="280.0" text="Menú Mostrar Empleados">
+               <VBox.margin>
+                  <Insets bottom="15.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <VBox fx:id="MostrarEmpleados" alignment="TOP_CENTER" prefHeight="16.0" prefWidth="1006.0" spacing="1.0" styleClass="panel-default">
+               <children>
+                  <HBox fx:id="hBoxLista" prefHeight="560.0" prefWidth="797.0" spacing="45.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="Id Empleado" wrappingWidth="82.98827743530273" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="Nombre" wrappingWidth="88.92194509506226">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Text>
+                        <Text layoutX="106.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="Apellidos" wrappingWidth="99.13680744171143" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="Fecha de nacimiento" wrappingWidth="160.13680744171143">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Text>
+                        <Text layoutX="454.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="Puesto" wrappingWidth="97.13680744171143" />
+                        <Text layoutX="578.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="Email" wrappingWidth="125.13680744171143" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+            <Button alignment="CENTER" onAction="#onButtonMenuPrincipal" prefHeight="35.0" prefWidth="152.0" style="-fx-background-color: #9bae78;" text="Menu Principal" textFill="#dadada">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="btn-primary" />
+               </styleClass>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</GridPane>
